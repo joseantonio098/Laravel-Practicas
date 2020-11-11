@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\EjemploController; 
+use App\Http\Controllers\EjemploController; //Llamar archivo de controladores
 
 /*
 |--------------------------------------------------------------------------

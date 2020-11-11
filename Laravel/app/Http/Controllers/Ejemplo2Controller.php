@@ -1,5 +1,5 @@
 <?php
-//Comando para crear controladores 
+//----------------Comando para crear controladores 
 //--> php artisan make:controller Ejemplo2Controller
 
 namespace App\Http\Controllers;
