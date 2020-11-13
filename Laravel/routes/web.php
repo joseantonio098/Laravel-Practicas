@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EjemploController; //Llamar archivo de controladores
+use App\Http\Controllers\Ejemplo3Controller; //Llamar archivo de controladores
+use App\Http\Controllers\paginasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +16,9 @@ use App\Http\Controllers\EjemploController; //Llamar archivo de controladores
 |
 */
 
-Route::get('/home', function () {
+
+/*
+Route::get('/', function () {
     return view('welcome');
     //return 'Bienvenidos a esta página';
 });
@@ -46,3 +50,19 @@ Route::get('/seccion/{id}/{nombre}', function($id,$nombre){
 
 //------------Agregando ruta desde un controlador (Clase)
 Route::get('/inicio/{usuario}', [EjemploController::class, 'inicio']);
+
+*/
+
+
+/*
+//------------Estructura de páginas (make:controller)
+Route::get('/', [paginasController::class, 'inicio']);
+Route::get('/inicio', [paginasController::class, 'inicio']);
+Route::get('/quienesSomos', [paginasController::class, 'quienesSomos']);
+Route::get('/foro', [paginasController::class, 'foro']);
+*/
+
+
+//------------Estructura de páginas (make:controller --resource)
+Route::resource('posts', Ejemplo3Controller::class);
+

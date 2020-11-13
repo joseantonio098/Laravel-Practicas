@@ -1,7 +1,7 @@
 <?php
 //----------------Comando para crear controladores 
 //--> php artisan make:controller --resource Ejemplo3Controller
-
+//--> php artisan route:list (Permite ver rutas)
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -15,7 +15,7 @@ class Ejemplo3Controller extends Controller
      */
     public function index()
     {
-        //
+        return 'Estás en la página de inicio del sitio';
     }
 
     /**
@@ -58,7 +58,7 @@ class Ejemplo3Controller extends Controller
      */
     public function edit($id)
     {
-        //
+        return "Estás accediendo al método edit con el parametro $id";
     }
 
     /**
