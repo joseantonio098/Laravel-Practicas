@@ -46,7 +46,7 @@
     <section class="footer">
 
         @yield("footer")    <!-- Sección 3 -->
-        <p>Derechos Reservador <b>joseantoniovalen1@gmail.com</b></p>
+        <p>Derechos Reservador <i>joseantoniovalen1@gmail.com</i></p>
 
     </section>
 </body>

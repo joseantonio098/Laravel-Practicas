@@ -31,6 +31,12 @@ class MiControlador extends Controller
         return view ('contacto');
     }
 
+    public function galeria()
+    {
+        $paises = ['Perú','Chile','Uruguay','Venezuela','Brasil'];
+        return view ('galeria', compact('paises')); // Pasamos parámetros a galeria(Function)
+    }
+
     /**
      * Store a newly created resource in storage.
      *

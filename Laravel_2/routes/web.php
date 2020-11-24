@@ -23,5 +23,6 @@ Route::get('/crear',[MiControlador::class, 'create']);
 Route::get('/articulos',[MiControlador::class, 'store']);
 Route::get('/mostrar',[MiControlador::class, 'show']);
 Route::get('/contacto',[MiControlador::class, 'contacto']);
+Route::get('/galeria',[MiControlador::class, 'galeria']);
 
 
