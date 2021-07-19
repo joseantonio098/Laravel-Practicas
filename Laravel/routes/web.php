@@ -16,8 +16,8 @@ use App\Http\Controllers\paginasController;
 |
 */
 
-
 /*
+
 Route::get('/', function () {
     return view('welcome');
     //return 'Bienvenidos a esta página';
@@ -55,13 +55,14 @@ Route::get('/inicio/{usuario}', [EjemploController::class, 'inicio']);
 
 
 /*
+
 //------------Estructura de páginas (make:controller)
 Route::get('/', [paginasController::class, 'inicio']);
 Route::get('/inicio', [paginasController::class, 'inicio']);
 Route::get('/quienesSomos', [paginasController::class, 'quienesSomos']);
 Route::get('/foro', [paginasController::class, 'foro']);
-*/
 
+*/
 
 //------------Estructura de páginas (make:controller --resource)
 Route::resource('posts', Ejemplo3Controller::class);

@@ -20,9 +20,10 @@ use App\Http\Controllers\MiControlador;
 
 Route::get('/', [MiControlador::class, 'index']);
 Route::get('/crear',[MiControlador::class, 'create']);
-Route::get('/articulos',[MiControlador::class, 'store']);
+Route::get('/articulos/{id}',[MiControlador::class, 'store']);
 Route::get('/mostrar',[MiControlador::class, 'show']);
 Route::get('/contacto',[MiControlador::class, 'contacto']);
 Route::get('/galeria',[MiControlador::class, 'galeria']);
+Route::get('/galeria2',[MiControlador::class, 'galeria2']);
 
 

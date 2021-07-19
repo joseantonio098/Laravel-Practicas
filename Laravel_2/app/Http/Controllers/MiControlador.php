@@ -37,15 +37,20 @@ class MiControlador extends Controller
         return view ('galeria', compact('paises')); // Pasamos parámetros a galeria(Function)
     }
 
+    public function galeria2()
+    {
+        return view ('galeria2');
+    }
+
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store()
+    public function store($id)
     {
-        return view ('articulos');
+        return view ('articulos', compact('id'));
     }
 
     /**

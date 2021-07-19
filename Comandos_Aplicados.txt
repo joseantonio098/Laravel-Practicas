@@ -1,0 +1,24 @@
+* Crear controladores
+php artisan make:controller PruebaControl
+php artisan make:controller --resources PruebaControl  (más recursos)
+
+* Muestra listado de rutas con sus acciones
+php artisan route:list
+
+--------------------------------------------
+Conectar a base de datos:
+
+mysql -u homestead -p 
+password: secret
+
+*Instalar phpMyAdmin
+C:\Windows\System32\drivers\etc -> hosts
+Insertar -> 192.168.10.10 phpMyAdmin.test
+
+*Crear tablas por defecto
+php artisan migrate
+
+--------------------------------------------
+
+
+

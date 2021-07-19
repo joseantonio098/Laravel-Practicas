@@ -2,7 +2,7 @@
 
 <!-- // -->
 @section("cabecera")
-    <h1>Página de galería</h1>
+    <h1>Página de galería!!</h1>
 @endsection
 
 <!-- // Sintaxis php-blade -->
@@ -20,5 +20,5 @@
 
 <!-- // -->
 @section("footer")
-
+    <h3>Mi país: {{$paises[0]}}</h3>
 @endsection
